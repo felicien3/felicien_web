@@ -4,80 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css cloning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <header class="header">
+    <nav class="navbar">
         <div class="logo">
-            <h2>FeWo-direkt</h2>
+            FeWo-direkt<span class="logo-superscript">®</span>
         </div>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li>Download the app</li>
-                <li>Travel planner</li>
-                <li>Register accommodation</li>
-                <li>Help</li>
-                <li>My travels</li>
-                <li>Inbox</li>
-                <li>Account</li>
-            </ul>
-        </nav>
-    </header>
+        
+        <div class="nav-links">
+            <button class="download-btn">
+                Download the app 
+                <i class="fa fa-download download-icon" aria-hidden="true"></i>
+            </button>
+            
+            <a href="#" class="nav-link">Travel planner</a>
+            <a href="#" class="nav-link">Register accommodation</a>
+            <a href="#" class="nav-link">Help</a>
+            <a href="#" class="nav-link">My travels</a>
+            <a href="#" class="nav-link">Inbox</a>
+            
+            <div class="user-profile">
+                <div class="profile-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M20 21v-2a7 7 0 0 0-14 0v2"></path>
+                    </svg>
+                </div>
+                <span class="nav-link">Niyonsenga</span>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero">
+    <div class="hero-container">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>FeWo-direkt – that’s how you go on holiday.</h2>
-            <div class="seek-info">
-                <div class="box-1">
-                    <label for="">
-                        <input type="text" placeholder="Where should we go?" class="seek">
-                    </label>
+            <h1 class="hero-title">The whole accommodation just for you</h1>
+            
+            <div class="search-container">
+                <div class="search-input">
+                    <div class="search-input-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="search-input-content">
+                        <div class="search-input-label">Where should we go?</div>
+                        <div class="search-input-value">Wuppertal, North Rhine-Westphalia, Ge...</div>
+                    </div>
                 </div>
-                <div class="box-2">
-                    <label for="">
-                        <input type="date">
-                    </label>
+                
+                <div class="search-input">
+                    <div class="search-input-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="search-input-content">
+                        <div class="search-input-label">Data</div>
+                        <div class="search-input-value">June 6 - June 8</div>
+                    </div>
                 </div>
-                <div class="box-3">
-                    <label for="">
-                        <p>Guest</p>
-                        <h4>2 travelers</h4>
-                    </label>
+                
+                <div class="search-input">
+                    <div class="search-input-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="search-input-content">
+                        <div class="search-input-label">Guests</div>
+                        <div class="search-input-value">2 travelers</div>
+                    </div>
                 </div>
-                <div class="box-4">
-                    <Button>Seek</Button>
-                </div>
+                
+                <button class="search-button">Seek</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="section-2">
-        <div class="section-2-content">
-            <h2>Find accommodations to suit your taste</h2>
-            <div class="box-images">
-                <div class=" box box-1">
-                    <img src="./images/image1.jpg" alt="">
-                    <h3>Holiday home</h3>
-                </div>
-                <div class=" box box-2">
-                    <img src="./images/image2.jpg" alt="">
-                    <h3>Holiday apartment</h3>
-                </div>
-                <div class=" box box-3">
-                    <img src="./images/image3.jpg" alt="">
-                    <h3>holiday cottage</h3>
-                </div>
-                <div class=" box box-4">
-                    <img src="./images/image4.jpg" alt="">
-                    <h3>country house</h3>
-                </div>
-                <div class=" box box-5">
-                    <img src="./images/image5.jpg" alt="">
-                    <h3>villa</h3>
-                </div>
+    <h2 class="section-title">Find accommodations to suit your taste</h2>
+    
+    <div class="accommodation-carousel">
+        <div class="accommodation-container">
+        
+            <div class="accommodation-card">
+                <img src="/images/1.jpeg" alt="Holiday home with pool" class="accommodation-image">
+                <div class="accommodation-label">holiday home</div>
+            </div>
+            
+            <div class="accommodation-card">
+                <img src="/images/3.jpeg" alt="Holiday apartment building" class="accommodation-image">
+                <div class="accommodation-label">Holiday apartment</div>
+            </div>
+            
+            <div class="accommodation-card">
+                <img src="/images/5.jpeg" alt="Holiday cottage in forest" class="accommodation-image">
+                <div class="accommodation-label">holiday cottage</div>
+            </div>
+            
+            <!-- Card 4: Country House -->
+            <div class="accommodation-card">
+                <img src="/images/2.jpeg" alt="Country house with garden" class="accommodation-image">
+                <div class="accommodation-label">country house</div>
+            </div>
+            
+            <!-- Card 5: Villa -->
+            <div class="accommodation-card">
+                <img src="/images/4.jpeg" alt="Villa by the lake" class="accommodation-image">
+                <div class="accommodation-label">villa</div>
             </div>
         </div>
-    </section>
+        
+        <button class="nav-arrow prev" aria-label="Previous">&#8249;</button>
+        <button class="nav-arrow next" aria-label="Next">&#8250;</button>
+    </div>
 
     <section class="section-3">
         <div class="section-3-content">
@@ -239,6 +286,31 @@
                     <p>incl. taxes & fees</p>
                 </div>
             </div>
+    </section>
+
+    <section class="section-6">
+        <div class="section-6-text">
+            <h2>Find private accommodation that suits you</h2>
+            <p>Want to bring everyone from grandma to baby? Even your furry friends? Discover vacation rentals that meet your needs.</p>
+        </div>
+        <div class="section-6-images">
+            <div class="image-box image-1">
+                <img src="./images/image6.jpg" alt="">
+                <p>Near the beach</p>
+            </div>
+            <div class="image-box image-2">
+                <img src="./images/image6.jpg" alt="">
+                <p>Pets welcome</p>
+            </div>
+            <div class="image-box image-3">
+                <img src="./images/image6.jpg" alt="">
+                <p>Pool</p>
+            </div>
+            <div class="image-box image-4">
+                <img src="./images/image6.jpg" alt="">
+                <p>More than three bedrooms</p>
+            </div>
+        </div>
     </section>
 
 </body>
